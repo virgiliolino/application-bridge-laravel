@@ -1,7 +1,7 @@
 {
     "name": "application-bridge-laravel/application-bridge-laravel",
     "description": "Laravel Application Bridge with the standard Application Bridge",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "type": "library",
     "keywords": ["laravel", "interface", "openApi", "swagger", "dispatcher", "route", "builder", "slim", "framework"],
     "homepage": "https://github.com/virgiliolino/application-bridge-laravel",
@@ -23,7 +23,7 @@
       "psr/http-message": "^1.0",
       "psr/container": "^1.0",
       "laravel/framework": "~5.5",
-      "bridge/application-bridge": "^0.1"
+      "bridge/application-bridge": "^1.0.0"
     },
     "autoload": {
         "psr-4": {
