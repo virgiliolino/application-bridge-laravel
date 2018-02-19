@@ -23,7 +23,7 @@
       "psr/http-message": "^1.0",
       "psr/container": "^1.0",
       "laravel/framework": "~5.5",
-      "bridge/application-bridge": "^1.0.0"
+      "bridge/application-bridge": "~1.0.0"
     },
     "autoload": {
         "psr-4": {
