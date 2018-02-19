@@ -1,7 +1,7 @@
 {
     "name": "application-bridge-laravel/application-bridge-laravel",
     "description": "Laravel Application Bridge with the standard Application Bridge",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "type": "library",
     "keywords": ["laravel", "interface", "openApi", "swagger", "dispatcher", "route", "builder", "slim", "framework"],
     "homepage": "https://github.com/virgiliolino/application-bridge-laravel",
