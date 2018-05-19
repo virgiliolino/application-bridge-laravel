@@ -3,6 +3,9 @@ namespace Lab\Application\Bridge;
 
 //use Bridge\ApplicationBridge\CommandHandler;
 //use Bridge\ApplicationBridge\Route;
+use Bridge\Application\ApplicationBridge;
+use Bridge\Application\RouteInterface;
+use Dispatcher\OpenApi\Route;
 use Illuminate\Contracts\Foundation\Application;
 
 /**
@@ -16,7 +19,7 @@ class LaravelBridge
     const ATTRIBUTE_NAMESPACE = 'namespace';
 
     private $app;
-    
+
     public function __construct(Application $app) {
         $this->app = $app;
     }
@@ -29,7 +32,7 @@ class LaravelBridge
      * @param  \Closure|array|string  $action
      * @return void
      */
-    public function addRoute(Route $route) {
+    public function addRoute(RouteInterface $route) {
         if (!$route->isValid()) {
             //perhaps some log?
             return;
@@ -47,7 +50,7 @@ class LaravelBridge
         );
     }
 
-    private function createAttributesFromRoute(Route $route) {
+    private function createAttributesFromRoute(RouteInterface $route) {
         $customAttributes = [];
         if (!$route->getPrefix()->isNull()) {
             $customAttributes[self::ATTRIBUTE_PREFIX] =
